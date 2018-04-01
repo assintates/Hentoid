@@ -515,7 +515,6 @@ public class ImportActivity extends BaseActivity {
                 String folderStr = paths[0] + "/" + ((uriContents.length > 1)?(uriContents[1]+"/"):"") +Consts.DEFAULT_LOCAL_DIRECTORY;
 
                 File folder = new File(folderStr);
-Timber.i("Root folder ! %s",folder);
                 Timber.d("Directory created successfully: %s", FileHelper.createDirectory(folder));
 
                 importFolder(folder);

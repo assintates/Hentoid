@@ -417,8 +417,6 @@ public class FileHelper {
         File dir = new File(rootFolderName, content.getStorageFolder());
 
         Timber.d("Opening: " + content.getTitle() + " from: " + dir);
-Timber.i("Opening: " + content.getTitle() + " from: " + dir);
-Timber.i("ROOT : %s", rootFolderName);
         if (isSAF() && getExtSdCardFolder(new File(rootFolderName)) == null) {
             Timber.d("File not found!! Exiting method.");
             Helper.toast(R.string.sd_access_error);
