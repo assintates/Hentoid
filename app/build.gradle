@@ -8,6 +8,9 @@ if (file('signing.gradle').exists()) {
 
 android {
     compileSdkVersion 27
+    lintOptions {
+        abortOnError false
+    }
     compileOptions {
         targetCompatibility JavaVersion.VERSION_1_8
         sourceCompatibility JavaVersion.VERSION_1_8
